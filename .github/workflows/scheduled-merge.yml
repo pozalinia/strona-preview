@@ -3,7 +3,8 @@ name: Scheduled Merge to Main
 on:
   schedule:
     # Czas w UTC. Przykładowo: 15 dzień miesiąca, godzina 18:00 UTC (15:00 czasu polskiego)
-    - cron: '10 23 12 * *'
+    - cron: '10 21 12 * *'
+  workflow_dispatch: # Umożliwia ręczne uruchomienie przyciskiem
 
 jobs:
   merge-preview-to-main:
